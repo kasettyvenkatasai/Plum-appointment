@@ -1,0 +1,51 @@
+# 🗓️ Appointment Parser Backend  
+
+A backend service designed to **extract appointment details** (date, time, and department) from **text or images**. It combines **OCR (Tesseract)** with **NLP (chrono-node)** and custom normalization rules to parse and structure natural language queries.  
+
+---
+
+## ✨ Features  
+- **OCR-Powered Text Extraction** 🖼️ → Upload images and extract text using Tesseract.  
+- **Entity Recognition** 📅 ⏰ 🏥 → Identify dates, times, and departments from free-form text.  
+- **Normalization + Guardrails** ✅ → Clean and standardize extracted entities.  
+- **End-to-End Parsing** 🔄 → Directly parse full appointment sentences like:  
+  > "I want to meet a heart specialist at 3pm today"  
+
+---
+
+## 🚀 Project Flow  
+1. **Input**: Users provide either plain text or an image.  
+2. **OCR**: Images are processed via Tesseract to extract text.  
+3. **Entity Extraction**: Text is parsed with chrono-node and regex patterns.  
+4. **Normalization**: Guardrails applied to clean & standardize.  
+5. **Output**: JSON with structured appointment data.  
+
+---
+
+## 🛠️ Tech Stack  
+- **Backend**: Node.js + Express  
+- **OCR**: Tesseract.js  
+- **NLP**: chrono-node  
+- **API**: REST (served via ngrok in dev)  
+
+---
+
+## ⚙️ Getting Started  
+
+### Prerequisites  
+- Install **Node.js** (includes `npm`)  
+
+### Installation & Running  
+Clone the repository:  
+```bash
+git clone https://github.com/kasettyvenkatasai/Plum-appointment.git
+cd backend1
+
+### Installation & Running  
+
+
+Install dependencies:
+npm install 
+
+Run the server:
+node server.js

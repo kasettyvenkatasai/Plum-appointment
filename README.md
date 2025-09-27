@@ -40,7 +40,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/kasettyvenkatasai/Plum-appointment.git
 cd backend1
-
+```
 ### Installation & Running  
 
 

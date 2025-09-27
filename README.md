@@ -45,7 +45,11 @@ cd backend1
 
 
 Install dependencies:
-npm install 
+```bash
+npm install
+``` 
 
 Run the server:
+```bash
 node server.js
+```

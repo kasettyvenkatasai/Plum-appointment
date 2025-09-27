@@ -53,3 +53,37 @@ Run the server:
 ```bash
 node server.js
 ```
+Base Url:
+```bash
+https://presley-cryptal-deja.ngrok-free.dev
+```
+OCR api:
+```bash
+curl -X POST https://presley-cryptal-deja.ngrok-free.dev/api/ocr \
+  -F "file=@sample.png"
+```
+
+Entities API:
+```bash
+curl -X POST https://presley-cryptal-deja.ngrok-free.dev/api/entities \
+  -H "Content-Type: application/json" \
+  -d '{ "text": "I want to meet a heart specialist at 3pm today" }'
+  ```
+Normalize API
+```bash
+curl -X POST https://presley-cryptal-deja.ngrok-free.dev/api/normalize \
+  -H "Content-Type: application/json" \
+  -d '{
+        "date_phrase": "today",
+        "time_phrase": "3pm",
+        "department": "heart specialist"
+      }'
+```
+Parse API
+```bash
+curl -X POST https://presley-cryptal-deja.ngrok-free.dev/api/parse \
+  -H "Content-Type: application/json" \
+  -d '{ "text": "I want to meet a heart specialist at 3pm today" }'
+```
+
+
